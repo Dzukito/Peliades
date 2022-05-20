@@ -51,10 +51,10 @@ def obtenerTendencias(dia,mes,anio,palabras):
 
 def parseArguments():
     parser= argparse.ArgumentParser()
-    parser.add_argument("-w", type=int, nargs=1, help="words amount")
-    parser.add_argument("--today", action= 'store_true', help="Current trends <args: words amount>")
-    parser.add_argument("--thismonth",action= 'store_true', help="Current month trends <args: words amount>")
-    parser.add_argument("--thisyear", action= 'store_true', help="Current year trends. <args: words amount> WARNING: It may be delayed depending on the amount of news in the year to the current date ")
+    parser.add_argument("-w", type=int, nargs=1, help="Cantidad de palabras")
+    parser.add_argument("--today", action= 'store_true', help="Tendencias de hoy")
+    parser.add_argument("--thismonth",action= 'store_true', help="Tendencias del mes")
+    parser.add_argument("--thisyear", action= 'store_true', help="Tendencias del anio. WARNING: Esta funcion puede demorar dependiendo la cantidad de noticias")
 
 
 
