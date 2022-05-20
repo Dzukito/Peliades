@@ -17,7 +17,7 @@
 
 ```console
 # Clonar el repo
-$ git clone https://github.com/Dzukito/Peliades.git
+$ git clone https://github.com/Dzukito/Pleiades.git
 
 # Instalar las librerias necesarias
 $ pip install numpy
