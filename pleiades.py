@@ -84,28 +84,28 @@ anio=str(datetime.datetime.today().year)
 palabras=20
 
 if(args.w):
-  print("[Peliades]: Se modifico la cantidad de palabras.")
+  print("[Pleiades]: Se modifico la cantidad de palabras.")
   palabras=args.w[0]
 
 if(args.today):
-    print("[Peliades]: Buscando tendencias de hoy...")
+    print("[Pleiades]: Buscando tendencias de hoy...")
     dia=str(datetime.datetime.today().day)
     mes=str(datetime.datetime.today().month)
     obtenerTendencias(dia,mes,anio,palabras)
-    print("[Peliades]: Visualización creada")
+    print("[Pleiades]: Visualización creada")
 
 if(args.thismonth):
-    print("[Peliades]: Buscando tendencias del mes...")
+    print("[Pleiades]: Buscando tendencias del mes...")
     dia="01"
     mes=str(datetime.datetime.today().month-1)
     obtenerTendencias(dia,mes,anio,palabras)
-    print("[Peliades]: Visualización creada")
+    print("[Pleiades]: Visualización creada")
 if(args.thisyear):
-    print("[Peliades]: Buscando tendencias del año...")
+    print("[Pleiades]: Buscando tendencias del año...")
     dia="01"
     mes="01"
     obtenerTendencias(dia,mes,anio,palabras)
-    print("[Peliades]: Visualización creada")
+    print("[Pleiades]: Visualización creada")
 
 
 
