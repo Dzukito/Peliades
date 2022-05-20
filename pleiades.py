@@ -40,8 +40,9 @@ def obtenerTendencias(dia,mes,anio,palabras):
   for noticia in noticias:
     tagsNoticia=noticia.get("tags")
     todosLosTags.extend(tagsNoticia)
-
-  tagsEnTexto = ' '.join(todosLosTags.remove('malware'))
+  
+  todosLosTags.remove('malware')
+  tagsEnTexto = ' '.join(todosLosTags)
   nube(tagsEnTexto,palabras)
 
 
