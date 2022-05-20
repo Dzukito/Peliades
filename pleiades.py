@@ -9,7 +9,7 @@ from sys import argv #argumentos para pasarle al programa
 import argparse
 from OTXv2 import OTXv2
 from OTXv2 import IndicatorTypes
-otx = OTXv2("48d217cf542e4b126274d68ce7ae06e78291ef68887540d032c6fe5c80c254c0")
+otx = OTXv2("APIKEY")
 
 
 
