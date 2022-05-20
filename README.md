@@ -1,4 +1,4 @@
-# Peliades - OTX News
+# Pleiades - OTX News
 
 <p align=center>
   <br>
@@ -34,7 +34,7 @@ $ cd Peliades
 
 ## Uso
 ```console
-$ python peliades.py
+$ python pleiades.py
 
 arguments:
   -h, --help   show this help message and exit
