@@ -47,5 +47,5 @@ arguments:
 ```
 ## Ejemplo
  <br>
- <img src="https://i.postimg.cc/h4krTwc8/image.png" height=500 width=500/>
+ <img src="https://i.postimg.cc/T1NBcvqJ/alien-Trends-auto-x2-1.jpg" height=500 width=500/>
 
