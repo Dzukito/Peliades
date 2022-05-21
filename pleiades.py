@@ -4,6 +4,7 @@ from PIL import Image
 import numpy as np
 from wordcloud import STOPWORDS, WordCloud, ImageColorGenerator
 
+
 import datetime
 from sys import argv #argumentos para pasarle al programa
 import argparse
