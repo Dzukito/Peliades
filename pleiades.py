@@ -14,12 +14,13 @@ otx = OTXv2("APIKEY")
 
 
 
-
+blackList=["malicious","access","control","stealer","analysis","credential","trojan","remote","theft","phishing","ransomware","threat","security","cyber","infrastructure","tactics","ttp","techniques","apt","evasion","tactical","malware","intrusion","agent","emulation","rat","rats","infostealer","stealer","financial","backdoor","downloader","dropper","espionage","chain"]
 
 
 def nube(textoANube,palab):
   # Generar nube
   stopwords = STOPWORDS
+  stopwords.update(blackList)
   mask = np.array(Image.open("./alien.png"))
   wordcloud1 = WordCloud(stopwords=stopwords, max_words=palab, mask=mask,min_font_size=5).generate(textoANube)
 
@@ -56,7 +57,7 @@ def parseArguments():
     parser.add_argument("-w", type=int, nargs=1, help="Cantidad de palabras")
     parser.add_argument("--today", action= 'store_true', help="Tendencias de hoy")
     parser.add_argument("--thismonth",action= 'store_true', help="Tendencias del mes")
-    parser.add_argument("--thisyear", action= 'store_true', help="Tendencias del anio. WARNING: Esta funcion puede demorar dependiendo la cantidad de noticias")
+    parser.add_argument("--thisweek", action= 'store_true', help="Tendencias de la semana")
 
 
 
@@ -102,10 +103,10 @@ if(args.thismonth):
     mes=str(datetime.datetime.today().month-1)
     obtenerTendencias(dia,mes,anio,palabras)
     print("[Pleiades]: Visualización creada")
-if(args.thisyear):
-    print("[Pleiades]: Buscando tendencias del año...")
-    dia="01"
-    mes="01"
+if(args.thisweek):
+    print("[Pleiades]: Buscando tendencias de la semana...")
+    dia=str(datetime.datetime.today().day-7)
+    mes=str(datetime.datetime.today().month)
     obtenerTendencias(dia,mes,anio,palabras)
     print("[Pleiades]: Visualización creada")
 
